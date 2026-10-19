@@ -1,0 +1,22 @@
+{
+  "input_shape": [
+    224,
+    224,
+    3
+  ],
+  "classes": [
+    "Diabetic_Retinopathy",
+    "Glaucoma",
+    "Cataract",
+    "Myopia"
+  ],
+  "preprocessing_steps": [
+    "Resize to 224x224",
+    "Convert to RGB",
+    "Normalize: img / 255.0",
+    "Scale: (img - 0.5) * 2.0 to get [-1, 1]"
+  ],
+  "tensorflow_version_trained": "2.19.0",
+  "model_architecture": "MobileNetV2 + Dense layers",
+  "accuracy": 0.8708971738815308
+}
